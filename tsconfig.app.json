@@ -26,8 +26,10 @@
     "paths": {
       "@atoms/*": ["components/atoms/*"],
       "@molecules/*": ["components/molecules/*"],
+      "@organisms/*": ["components/organisms/*"],
       "@pages/*": ["components/pages/*"],
-      "@api/*": ["api/*"]
+      "@api/*": ["api/*"],
+      "@data/*":["data/*"]
     },
   },
   "include": ["src"]
