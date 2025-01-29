@@ -1,8 +1,12 @@
+import Categories from "components/organisms/categories/Categories"
 
 
 function Home() {
   return (
-    <div><h1>Hello World</h1></div>
+    <section>
+      <h1>Recettes lovers</h1>
+      <Categories/>
+    </section>
   )
 }
 
