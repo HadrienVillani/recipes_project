@@ -29,7 +29,8 @@
       "@organisms/*": ["components/organisms/*"],
       "@pages/*": ["components/pages/*"],
       "@api/*": ["api/*"],
-      "@data/*":["data/*"]
+      "@data/*":["data/*"],
+      "@utils/*":["utils/*"]
     },
   },
   "include": ["src"]

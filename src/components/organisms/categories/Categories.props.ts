@@ -1,3 +1,4 @@
-export interface ICategories{
-    name :string
-}
+export interface IQuery{
+    categorie:string,
+    subCategorie:string
+  }

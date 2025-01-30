@@ -4,10 +4,9 @@ const categories = [
     description:
       "Small dishes served before the main course, including soups, salads, and finger foods.",
     subcategories: [
-      "Soups & Broths",
+      "Soups",
       "Salads",
-      "Dips & Spreads",
-      "Finger Foods",
+      "Dips",
     ],
   },
   {
@@ -15,13 +14,14 @@ const categories = [
     description:
       "Hearty dishes that serve as the main part of a meal, including meat, seafood, pasta, and vegetarian options.",
     subcategories: [
-      "Pasta & Noodles",
-      "Rice & Grains",
-      "Meat & Poultry",
-      "Fish & Seafood",
-      "Vegetarian & Vegan",
+      "Pasta",
+      "Noodles",
+      "Rice",
+      "Meat",
+      "Fish",
+      "Seafood",
+      "Vegetarian",
       "Casseroles",
-      "Stir-fries",
     ],
   },
   {
@@ -30,9 +30,9 @@ const categories = [
       "Complementary dishes served alongside the main course, including vegetables, breads, and sauces.",
     subcategories: [
       "Vegetables",
-      "Breads & Rolls",
-      "Sauces & Condiments",
-      "Legumes & Beans",
+      "Breads",
+      "Sauces",
+      "Legumes",
     ],
   },
   {
@@ -40,11 +40,14 @@ const categories = [
     description:
       "Sweet treats and baked goods enjoyed at the end of a meal or as snacks.",
     subcategories: [
-      "Cakes & Cupcakes",
-      "Cookies & Biscuits",
-      "Pies & Tarts",
-      "Ice Cream & Sorbets",
-      "Chocolates & Candies",
+      "Cakes",
+      "Cupcakes",
+      "Cookies",
+      "Biscuits",
+      "Pies",
+      "Tarts",
+      "Ice Cream",
+      "Chocolates",
     ],
   },
   {
@@ -52,9 +55,10 @@ const categories = [
     description:
       "Refreshing drinks, including non-alcoholic and alcoholic options.",
     subcategories: [
-      "Smoothies & Shakes",
-      "Cocktails & Mocktails",
-      "Teas & Coffees",
+      "Smoothies",
+      "Cocktails",
+      "Teas",
+      "Coffees",
       "Juices",
     ],
   },
@@ -63,10 +67,10 @@ const categories = [
     description:
       "Morning meals featuring eggs, pastries, pancakes, and cereals.",
     subcategories: [
-      "Pancakes & Waffles",
-      "Eggs & Omelets",
-      "Pastries & Baked Goods",
-      "Cereal & Granola",
+      "Pancake",
+      "Waffles",
+      "Eggs",
+      "Pastries",
     ],
   },
   {
@@ -74,10 +78,12 @@ const categories = [
     description:
       "Quick and tasty meals often found in restaurants, food trucks, or street vendors.",
     subcategories: [
-      "Sandwiches & Burgers",
-      "Tacos & Wraps",
-      "Pizza & Flatbreads",
-      "Fries & Chips",
+      "Sandwiches",
+      "Burgers",
+      "Tacos",
+      "Wraps",
+      "Pizza",
+      "Fries",
     ],
   },
   {
@@ -89,7 +95,7 @@ const categories = [
       "French",
       "Mexican",
       "Indian",
-      "Asian (Chinese, Japanese, Thai, Korean)",
+      "Asian",
       "Mediterranean",
     ],
   },

@@ -1,18 +1,18 @@
 import {Routes, Route} from 'react-router-dom'
-
 import './App.css'
 import Home from '@pages/Home'
-
-import SubCategoriesPage from '@pages/SubCategoriesPage'
+import { RecipesPage } from '@pages/recipesPage/RecipesPage'
+import { Navbar } from '@organisms/navbar/Navbar'
 
 function App() {
 
 
   return (
     <>
+    <Navbar/>
      <Routes>
       <Route path="/" element={<Home/>}/>
-        <Route path=":subCategories" element={<SubCategoriesPage/>}/> 
+        <Route path=":recipes" element={<RecipesPage/>}/> 
      </Routes>
     </>
   )
