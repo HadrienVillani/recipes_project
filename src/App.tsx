@@ -2,17 +2,19 @@ import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from '@pages/Home'
 import { RecipesPage } from '@pages/recipesPage/RecipesPage'
-import { Navbar } from '@organisms/navbar/Navbar'
+import { ResultPage } from '@pages/resultsPage/ResultPage'
+import { NavBar } from '@organisms/navbar'
 
 function App() {
 
 
   return (
     <>
-    <Navbar/>
+    <NavBar/>
      <Routes>
-      <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path=":recipes" element={<RecipesPage/>}/> 
+        <Route path="/resultsPage" element={<ResultPage/>}/>
      </Routes>
     </>
   )

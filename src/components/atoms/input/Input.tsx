@@ -1,6 +1,8 @@
-function Input() {
+import { IInput } from "./Input.props"
+
+function Input({placeholder}:IInput) {
   return (
-    <div>Input</div>
+    <input type="text" placeholder={placeholder}/>
   )
 }
 

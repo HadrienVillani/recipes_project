@@ -1,17 +1,19 @@
 import { IRecipeItem } from "./RecipeItem.props";
 
 export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
-    console.log(recipeItem);
     
+    let ingredients = recipeItem.ingredients.split("|")
+
     return <>
             <h3>{recipeItem.title}</h3>
-                <div>
-                    <h4>Nombre de protions :</h4>
-                    <p>{recipeItem.servings}</p>
+                <div className="flex justify-center my-5">
+                    <h4>Nombre de protions : {" "} <span>{recipeItem.servings}</span></h4>
                 </div>
-                <div>
+                <div className="my-5">
                     <h4>Ingrédients</h4>
-                    <p>{recipeItem.ingredients}</p>
+                    <ul className="flex items-center justify-center flex-wrap">{ingredients.map((ingredient, key)=>{
+                        return <li className="bg-neutral-800 rounded-md p-5 m-1"key={key}>{ingredient}</li>
+                    })}</ul>
                 </div>
                 <div>
                     <h4>Les instructions</h4>
