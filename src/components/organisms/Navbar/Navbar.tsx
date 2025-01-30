@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom"
 export const NavBar = ()=>{
     return(
         <>
-            <nav className="w-full flex items-center justify-between p-5 mb-15">
-                <h1>Recipes Lovers</h1>
+            <nav className="px-10 w-screen flex items-center justify-between p-5 mb-15 shadow-md">
+                <NavLink to="/"><h1>Recipes Lovers</h1></NavLink>
                 <SearchBar/>
                 <ul className="flex justify-between">
                     <NavLink to={"/"}><li>Home</li></NavLink>

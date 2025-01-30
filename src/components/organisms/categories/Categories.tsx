@@ -21,7 +21,7 @@ const Categories=()=> {
                 <h3 className='text-white uppercase'>{categorie.name}</h3>
                 <ul className='flex flex-wrap'>
                   {categorie.subcategories.map((subCategorie, key)=>{
-                    return <Link key={key} to={":recipes"+createQueryString({categorie:`${slugify(categorie.name)}`,subCategorie:`${slugify(subCategorie)}`})}><li key={key} className='shadow-2xl rounded-md my-10 mr-10 p-10 bg-neutral-700 hover:bg-neutral-600'>{subCategorie}</li></Link>
+                    return <Link key={key} to={":recipes"+createQueryString({categorie:`${slugify(categorie.name)}`,subCategorie:`${slugify(subCategorie)}`})}><li key={key} className='duration-500 border-2 border-amber-600 shadow-2xl rounded-md my-5 mr-10 p-10 bg-amber-600 font-bold uppercase hover:bg-transparent'>{subCategorie}</li></Link>
                   })}
                 </ul>
               </li>
