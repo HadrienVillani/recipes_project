@@ -5,5 +5,5 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
   plugins: [react(),tailwindcss(),tsconfigPaths()],
-  base:"https://hadrienvillani.github.io/"
+  base:"/recipes_project/"
 })
