@@ -1,8 +1,8 @@
 import { IInput } from "./Input.props"
 
-function Input({placeholder}:IInput) {
+function Input({onChange, placeholder}:IInput) {
   return (
-    <input className="p-4 bg-amber-600 rounded-l-md hover:bg-transparent duration-500 border-amber-600 border-2"type="text" placeholder={placeholder}/>
+    <input onChange={onChange}className=" p-3 border-amber-600 bg-transparent rounded-l-md  duration-500 border-2"type="text" placeholder={placeholder}/>
   )
 }
 

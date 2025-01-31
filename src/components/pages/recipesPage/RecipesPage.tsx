@@ -1,5 +1,5 @@
 import { IQuery } from "@organisms/categories";
-import { RecipeItem } from "@organisms/recipeItem";
+import { RecipeItem } from "@molecules/recipeItem";
 import { useRecipe } from "hooks/queries";
 import { useMemo } from "react";
 import { useLocation } from "react-router-dom";
@@ -21,7 +21,6 @@ export const RecipesPage = ()=>{
     let queryObject:any = object;
     queryString && decodeURIComponent(queryString.replace('?', '')).split('&').map((itemString) => {
       let [itemKey, itemValue] = itemString.split("=");
-      console.log(queryObject.subCategorie =itemValue);
        queryObject[itemKey] = itemValue  
     });
     return queryObject;

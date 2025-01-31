@@ -11,7 +11,23 @@ const Categories=()=> {
       }).join('&');
     return queryString ? `?${queryString}` : "";
   };
-    
+//   export const fetching = async ({ qs }: { qs: [string, { search?: string, page?: number, limit?: number, name?: string }] }) => {
+//     const [, params] = qs;
+//     const encoded = new URLSearchParams(params as  Record<string, string>);
+
+//     return encoded.toString();
+// }
+
+//  Regarder as 
+// new Map()
+//  as Record <string, string>
+  // new Set()
+// /////////////
+
+
+// fetching({ qs: ["", { search: "test", page: 1, limit: 10, name: "test" }] })
+
+
   return (
     <section>
         <h2>Categories</h2>
@@ -19,7 +35,7 @@ const Categories=()=> {
            return (
               <li key={key} className='flex items-start flex-col'>
                 <h3 className='text-white uppercase'>{categorie.name}</h3>
-                <ul className='flex flex-wrap'>
+                <ul className='flex flex-wrap mb-10'>
                   {categorie.subcategories.map((subCategorie, key)=>{
                     return <Link key={key} to={":recipes"+createQueryString({categorie:`${slugify(categorie.name)}`,subCategorie:`${slugify(subCategorie)}`})}><li key={key} className='duration-500 border-2 border-amber-600 shadow-2xl rounded-md my-5 mr-10 p-10 bg-amber-600 font-bold uppercase hover:bg-transparent'>{subCategorie}</li></Link>
                   })}

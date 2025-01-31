@@ -8,7 +8,7 @@ export const NavBar = ()=>{
                 <NavLink to="/"><h1>Recipes Lovers</h1></NavLink>
                 <SearchBar/>
                 <ul className="flex justify-between">
-                    <NavLink to={"/"}><li>Home</li></NavLink>
+                    <NavLink to={"/"}><li className="font-bold uppercase hover:text-amber-600">Home</li></NavLink>
                 </ul>
             </nav>
         </>

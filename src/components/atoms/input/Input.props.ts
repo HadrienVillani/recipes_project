@@ -1,3 +1,4 @@
 export interface IInput {
-    placeholder: string
+    placeholder: string,
+    onChange : any
 }

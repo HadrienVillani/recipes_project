@@ -12,7 +12,7 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
                 <div className="my-5">
                     <h4>Ingrédients</h4>
                     <ul className="flex items-center justify-center flex-wrap">{ingredients.map((ingredient, key)=>{
-                        return <li className="bg-indigo-700 rounded-md p-5 m-1"key={key}>{ingredient}</li>
+                        return <li className="border-3 border-amber-600 rounded-md p-3 m-1"key={key}>{ingredient}</li>
                     })}</ul>
                 </div>
                 <div>

@@ -22,7 +22,7 @@ h1 {
 }
 
 h2,
-h3,
+
 h4 {
   text-transform: uppercase;
   font-weight: bold;
@@ -30,12 +30,17 @@ h4 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #e17100;
 }
 
 h2 {
   font-size: 2em;
   margin-bottom: 15px;
+  color: #e17100;
+  font-weight: bold;
 }
 
 a {
