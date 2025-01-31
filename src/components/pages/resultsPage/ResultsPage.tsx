@@ -18,7 +18,6 @@ export const ResultPage = () =>{
         <h2 >Error</h2>
       </section>
     }
-        console.log(data.length === 0 ? "ok": "pas ok");
         
     return(
         <>

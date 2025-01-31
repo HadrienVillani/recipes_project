@@ -11,7 +11,7 @@ export const SearchBar = () =>{
     function handleSubmit (){        
         onSubmit(changes)  
         if(changes){
-            navigate("/results-page")
+            navigate("/recipes_project/results-page")
         }
     }
     return (

@@ -2,8 +2,8 @@ import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from '@pages/Home'
 import { RecipesPage } from '@pages/recipesPage/RecipesPage'
-import { ResultPage } from '@pages/resultsPage/SearchPage'
 import { NavBar } from '@organisms/navbar'
+import { ResultPage } from '@pages/resultsPage/ResultsPage'
 
 function App() {
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Une courte description du projet, son objectif et ce qu'il apporte.
+Recipes Lovers est application qui permet de rechercher des recettes soit par catégorie soit par une recherche
 
 ## Table des matières
 
@@ -17,7 +17,7 @@ Une courte description du projet, son objectif et ce qu'il apporte.
 
 1. Cloner le dépôt :
    ```bash
-   git clone https://github.com/recipes_project.git
+   git clone https://github.com/HadrienVillani/recipes_project.git
    ```
 2. Accéder au dossier du projet :
    ```bash
@@ -35,6 +35,7 @@ Une courte description du projet, son objectif et ce qu'il apporte.
 ## Technologies utilisées
 
 - [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [TanStack](https://tanstack.com/)
 - [React Router](https://reactrouter.com/)
