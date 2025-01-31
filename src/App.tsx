@@ -13,8 +13,8 @@ function App() {
     <NavBar/>
      <Routes>
         <Route path="/recipes_project/" element={<Home/>}/>
-        <Route path=":recipes" element={<RecipesPage/>}/> 
-        <Route path="results-page" element={<ResultPage/>}/>
+        <Route path="/recipes_project/:recipes" element={<RecipesPage/>}/> 
+        <Route path="/recipes_project/results-page" element={<ResultPage/>}/>
      </Routes>
     </>
   )
