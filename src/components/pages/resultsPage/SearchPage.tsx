@@ -15,19 +15,22 @@ export const ResultPage = () =>{
     }
     else if(isError){
       return  <section className="flex items-center justify-center">
-        <h2 > Aucun resultat</h2>
+        <h2 >Error</h2>
       </section>
     }
-    
+        console.log(data.length === 0 ? "ok": "pas ok");
+        
     return(
         <>
         <section>
             <h2>Vos resultats</h2>
-            <ul className="flex flex-wrap">{data && data.map((recipe:IRecipe, key:number)=>{
-                       return <li className='shadow-2xl rounded-md my-10 mr-10 p-10 bg-neutral-700' key={key}>
-                                <RecipeItem recipeItem={recipe}/>
-                              </li>  
-                    })}</ul>
+            {
+                data.length !== 0 ? <ul className="flex flex-wrap">{data.map((recipe:IRecipe, key:number)=>{
+                    return <li className='shadow-2xl rounded-md my-10 mr-10 p-10 bg-neutral-700' key={key}>
+                             <RecipeItem recipeItem={recipe}/>
+                           </li>  
+                 })}</ul> : <h4>Aucun résultat</h4>
+            }
         </section>
         </>
     )

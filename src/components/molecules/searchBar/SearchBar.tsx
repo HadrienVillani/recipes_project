@@ -14,9 +14,6 @@ export const SearchBar = () =>{
             navigate("/results-page")
         }
     }
-
-    
-    
     return (
         <div className="flex items-center"> 
             <Input onChange={(e:any)=>onChange(e.currentTarget.value)}placeholder="Chercher une recette"/>

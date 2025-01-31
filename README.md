@@ -1,50 +1,59 @@
-# React + TypeScript + Vite
+# Nom du Projet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Licence](https://img.shields.io/badge/licence-MIT-blue.svg)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Une courte description du projet, son objectif et ce qu'il apporte.
 
-## Expanding the ESLint configuration
+## Table des matières
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Installation](#installation)
+- [Technologies utilisées](#technologies-utilisees)
+- [Fonctionnalités](#fonctionnalites)
+- [Utilisation](#utilisation)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
+- [Auteur](#auteur)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/votre-repo.git
+   ```
+2. Accéder au dossier du projet :
+   ```bash
+   cd nom-du-projet
+   ```
+3. Installer les dépendances :
+   ```bash
+   npm install
+   ```
+4. Lancer le projet :
+   ```bash
+   npm start
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies utilisées
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Fonctionnalités
+- 🔹 Importer toute les recette depuis l'api 
+- 🔹 Afficher toute les catégories de recettes possible
+- 🔹 Afficher les recettes en fonction de la catégorie choisis
+- 🔹 faire une recherche de recette 
+
+## Utilisation
+
+Expliquez ici comment utiliser le projet, éventuellement avec des captures d'écran ou des exemples de commandes.
+
+
+## Auteur
+
+**Hadrien Villani**  
+[Portfolio](https://www.hadrienvillani.fr/)  
+[LinkedIn](https://www.linkedin.com/in/hadrienvillani/)  
+Email : [hadrien.villani@live.fr](mailto:hadrien.villani@live.fr)
