@@ -2,7 +2,6 @@ import { RecipeItem } from "@molecules/recipeItem";
 import { IRecipe } from "@pages/recipesPage";
 import { useSearch } from "@store/useSearch";
 import { useRecipe } from "hooks/queries";
-import { useEffect } from "react";
 
 
 export const ResultPage = () =>{

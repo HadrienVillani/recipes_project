@@ -1,8 +1,7 @@
 import { Button } from "@atoms/button/Button"
 import Input from "@atoms/input/Input";
 import { useSearch } from "@store/useSearch";
-import { useRecipe } from "hooks/queries";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const SearchBar = () =>{
     const changes = useSearch((state) => state.searchData)
