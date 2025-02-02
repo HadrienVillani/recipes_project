@@ -2,59 +2,59 @@
 
 ## Description
 
-Recipes Lovers est application qui permet de rechercher des recettes soit par catégorie soit par une recherche
+**Recipes Lovers** est une application qui permet de rechercher des recettes soit par catégorie, soit via une recherche.
 
 ## Table des matières
 
 - [Installation](#installation)
-- [Technologies utilisées](#technologies-utilisees)
-- [Fonctionnalités](#fonctionnalites)
-- [Prochaine fonctionnalités](#prochaine-fonctionnalités)
+- [Technologies utilisées](#technologies-utilisées)
+- [Fonctionnalités](#fonctionnalités)
+- [Prochaines fonctionnalités](#prochaines-fonctionnalités)
 - [Utilisation](#utilisation)
 - [Auteur](#auteur)
 
 ## Installation
 
-1. Cloner le dépôt :
+1. **Cloner le dépôt** :
    ```bash
    git clone https://github.com/HadrienVillani/recipes_project.git
    ```
-2. Accéder au dossier du projet :
+2. **Accéder au dossier du projet** :
    ```bash
    cd recipes_project
    ```
-3. Installer les dépendances :
+3. **Installer les dépendances** :
    ```bash
    npm install
    ```
-4. Lancer le projet :
+4. **Lancer le projet** :
    ```bash
    npm run dev
    ```
 
 ## Technologies utilisées
 
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [TanStack](https://tanstack.com/)
-- [React Router](https://reactrouter.com/)
-- [Api Ninja](https://www.api-ninjas.com/)
+- 🛠 **[React](https://react.dev/)**
+- 🛠 **[TypeScript](https://www.typescriptlang.org/)**
+- 🎨 **[Tailwind CSS](https://tailwindcss.com/)**
+- 📦 **[TanStack](https://tanstack.com/)**
+- 🔗 **[React Router](https://reactrouter.com/)**
+- 🌍 **[API Ninja](https://www.api-ninjas.com/)**
 
 ## Fonctionnalités
 
-- 🔹 Importer toute les recette depuis l'api
-- 🔹 Afficher toute les catégories de recettes possible
-- 🔹 Afficher les recettes en fonction de la catégorie choisis
-- 🔹 faire une recherche de recette
+✔ **Importer toutes les recettes depuis l'API**  
+✔ **Afficher toutes les catégories de recettes disponibles**  
+✔ **Afficher les recettes en fonction de la catégorie choisie**  
+✔ **Rechercher une recette**  
 
-## Prochaine fonctionnalités
+## Prochaines fonctionnalités
 
-- 🔹 Ajouter les recettes liké
-- 🔹 Générer une liste de courses avec les ingrédients des recettes liké
-- 🔹 Pouvoir modifier sa liste de course avec une checklist
-- 🔹 Gérer l'apparition des components via Skeleton
-- 🔹 Tout relier à une base de donnée
+🚀 **Ajouter les recettes likées**  
+🛒 **Générer une liste de courses avec les ingrédients des recettes likées**  
+✅ **Pouvoir modifier sa liste de courses avec une checklist**  
+💀 **Gérer l'affichage des composants via Skeleton**  
+🗄 **Tout relier à une base de données**  
 
 ## Utilisation
 
@@ -65,7 +65,7 @@ Recipes Lovers est application qui permet de rechercher des recettes soit par ca
 
 ## Auteur
 
-**Hadrien Villani**  
-[Portfolio](https://www.hadrienvillani.fr/)  
-[LinkedIn](https://www.linkedin.com/in/hadrienvillani/)  
-Email : [hadrien.villani@live.fr](mailto:hadrien.villani@live.fr)
+👨‍💻 **Hadrien Villani**  
+🌍 [Portfolio](https://www.hadrienvillani.fr/)  
+🔗 [LinkedIn](https://www.linkedin.com/in/hadrienvillani/)  
+📧 Email : [hadrien.villani@live.fr](mailto:hadrien.villani@live.fr)
