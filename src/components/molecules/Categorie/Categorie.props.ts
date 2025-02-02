@@ -1,5 +1,5 @@
 export interface ICategorie {
-    name :string,
-    description:string,
-    subcategories:string[]
+    title :string,
+    key: number,
+    path:string
 }
