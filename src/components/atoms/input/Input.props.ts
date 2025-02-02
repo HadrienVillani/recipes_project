@@ -1,4 +1,6 @@
 export interface IInput {
-    placeholder: string,
-    onChange : any
+    placeholder?: string,
+    type?: string,
+    onChange? : any,
+    value?:string | number,
 }
