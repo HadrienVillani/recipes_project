@@ -12,6 +12,12 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
         !count ? setCount(true) : setCount(false)
         !count ? setAllLike(allLike + 1) : setAllLike(allLike -1)
     }
+    const test:any =[];
+    const addToShoppingList = () =>{
+        test.push(recipeItem)
+        console.log(test);
+    }
+    
     return <>
             <h3>{recipeItem.title}</h3>
                 <div className="flex justify-center my-5">
@@ -27,9 +33,13 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
                     <h4>Les instructions</h4>
                     <p>{recipeItem.instructions}</p>
                 </div>
-                <div className="flex w-full justify-center items-center my-10">
-                    <div className="py-3 px-6 rounded-l-lg  text-black bg-amber-600 text-white text-lg">{allLike}</div>
-                    <Button onClick={handleClick} label={!count ? "Like" : "Unlike"}/>
-                </div>
+                    <div className="flex justify-center items-center mt-10">
+                        <Button style="w-2/5 rounded-lg mr-10" onClick={addToShoppingList} label={"Ajouter la recette à la liste de course"}/>
+                        <div className="flex">
+                            <div className="py-3 px-6 w-[100px] rounded-l-lg  text-black bg-amber-600 text-white text-lg">{allLike}</div>
+                            <Button style="rounded-r-md font-bold" onClick={handleClick} label={!count ? "♡" : "♥" }/>
+                        </div>
+                    </div>
+                
             </>
 }
