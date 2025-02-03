@@ -4,7 +4,7 @@ import Home from '@pages/Home'
 import { RecipesPage } from '@pages/recipesPage/RecipesPage'
 import { NavBar } from '@organisms/navbar'
 import { ResultPage } from '@pages/resultsPage/ResultsPage'
-import { LikesPages } from '@pages/likesPage'
+import { LikesPages } from '@pages/likedRecipe'
 import { IngredientsList } from '@pages/IngredientsList'
 
 function App() {
