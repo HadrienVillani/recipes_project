@@ -9,6 +9,7 @@ export const NavBar = ()=>{
                 <SearchBar/>
                 <ul className="flex justify-between">
                     <NavLink to={"/recipes_project/"}><li className="font-bold uppercase hover:text-amber-600">Home</li></NavLink>
+                    <NavLink to={"/recipes_project/shopping-list"}><li className="font-bold uppercase hover:text-amber-600">Shopping List</li></NavLink>
                 </ul>
             </nav>
         </>

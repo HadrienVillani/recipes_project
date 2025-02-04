@@ -7,7 +7,9 @@ export const SearchBar = () =>{
     const changes = useSearch((state) => state.searchData)
     const onChange = useSearch((state)=>state.onChange)
     const onSubmit = useSearch((state)=>state.onSubmit)
+    
     let navigate = useNavigate()
+
     function handleSubmit (){        
         onSubmit(changes)  
         if(changes){

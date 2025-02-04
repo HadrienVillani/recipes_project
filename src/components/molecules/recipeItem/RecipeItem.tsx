@@ -1,21 +1,30 @@
 import { Button } from "@atoms/button";
 import { IRecipeItem } from "./RecipeItem.props";
-import Input from "@atoms/input/Input";
 import { useState } from "react";
+import { useShoppingList } from "@store/useShoppingList";
 
 export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
+
     const [count , setCount] = useState(false)
     const [allLike, setAllLike] = useState(50)
+
     let ingredients = recipeItem.ingredients.split("|")
+
     const handleClick = () =>{
-        
         !count ? setCount(true) : setCount(false)
         !count ? setAllLike(allLike + 1) : setAllLike(allLike -1)
     }
+
+
+    const setShoppingList= useShoppingList((state)=>state.setShoppingList);
+    const shoppingList= useShoppingList((state)=>state.shoppingList);
+
     const test:any =[];
     const addToShoppingList = () =>{
         test.push(recipeItem)
-        console.log(test);
+        
+        setShoppingList(recipeItem)
+        console.log(shoppingList);
     }
     
     return <>
