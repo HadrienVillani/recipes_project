@@ -19,12 +19,17 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
     const setShoppingList= useShoppingList((state)=>state.setShoppingList);
     const shoppingList= useShoppingList((state)=>state.shoppingList);
 
-    const test:any =[];
+    
     const addToShoppingList = () =>{
-        test.push(recipeItem)
+        const test:any =[];
+        for (let i = 0; i < ingredients.length; i++) {
+            test.push({[`ingrédients${i}`] : ingredients[i].split(" ")})      
+        }
+
+        console.log(test);
         
-        setShoppingList(recipeItem)
-        console.log(shoppingList);
+        setShoppingList(ingredients)
+
     }
     
     return <>
