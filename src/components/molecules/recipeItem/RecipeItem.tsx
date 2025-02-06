@@ -23,7 +23,7 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
     const addToShoppingList = () =>{
         const test:any =[];
         for (let i = 0; i < ingredients.length; i++) {
-            test.push({[`ingrédients${i}`] : ingredients[i].split(" ")})      
+            test.push({[`ingrédients${i}`] : ingredients[i].replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').split(" ")})      
         }
 
         console.log(test);
@@ -40,7 +40,7 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
                 <div className="my-5">
                     <h4>Ingrédients</h4>
                     <ul className="flex items-center justify-center flex-wrap">{ingredients.map((ingredient, key)=>{
-                        return <li className="border-3 border-amber-600 rounded-md p-3 m-1"key={key}>{ingredient}</li>
+                        return <li className="border-3 border-amber-600 rounded-md p-3 m-1"key={key}>{ingredient.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>]/gi, '')}</li>
                     })}</ul>
                 </div>
                 <div>
