@@ -2,13 +2,13 @@ import { Button } from "@atoms/button";
 import { IRecipeItem } from "./RecipeItem.props";
 import { useState } from "react";
 import { useShoppingList } from "@store/useShoppingList";
-
+import { ingredients } from "@data/igredients";
 export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
 
     const [count , setCount] = useState(false)
     const [allLike, setAllLike] = useState(50)
 
-    let ingredients = recipeItem.ingredients.split("|")
+    let recipeIngredients = recipeItem.ingredients.split("|")
 
     const handleClick = () =>{
         !count ? setCount(true) : setCount(false)
@@ -21,15 +21,21 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
 
     
     const addToShoppingList = () =>{
-        const test:any =[];
-        for (let i = 0; i < ingredients.length; i++) {
-            test.push({[`ingrédients${i}`] : ingredients[i].replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '').split(" ")})      
+        const test:string[] =[];
+        
+        for (let t = 0; t < ingredients.length; t++) {
+            for (let i = 0; i < recipeIngredients.length; i++) {
+                if(recipeIngredients[i].toLowerCase().includes(ingredients[t].toLowerCase())){
+                   const isExist = test.indexOf(ingredients[t]) !== -1 
+                    !isExist && test.push(ingredients[t])     
+                    console.log(test);             
+                }
+            } 
         }
-
-        console.log(test);
         
         setShoppingList(ingredients)
-
+        
+        
     }
     
     return <>
@@ -39,7 +45,7 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
                 </div>
                 <div className="my-5">
                     <h4>Ingrédients</h4>
-                    <ul className="flex items-center justify-center flex-wrap">{ingredients.map((ingredient, key)=>{
+                    <ul className="flex items-center justify-center flex-wrap">{recipeIngredients.map((ingredient, key)=>{
                         return <li className="border-3 border-amber-600 rounded-md p-3 m-1"key={key}>{ingredient.replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>]/gi, '')}</li>
                     })}</ul>
                 </div>
