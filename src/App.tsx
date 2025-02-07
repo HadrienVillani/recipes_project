@@ -4,8 +4,8 @@ import Home from '@pages/Home'
 import { RecipesPage } from '@pages/recipesPage/RecipesPage'
 import { NavBar } from '@organisms/navbar'
 import { ResultPage } from '@pages/resultsPage/ResultsPage'
-import { LikesPages } from '@pages/likedRecipe'
-import { IngredientsList } from '@pages/ShoppingList'
+import { LikedRecipes } from '@pages/likedRecipes'
+import { IngredientsList } from '@pages/shoppingList'
 
 function App() {
 
@@ -17,8 +17,8 @@ function App() {
         <Route path="/recipes_project/" element={<Home/>}/>
         <Route path="/recipes_project/:recipes" element={<RecipesPage/>}/> 
         <Route path="/recipes_project/results-page" element={<ResultPage/>}/>
-        <Route path="/recipes_project/likes-page" element={<LikesPages/>}/>
         <Route path="/recipes_project/shopping-list" element={<IngredientsList/>}/>
+        <Route path="/recipes_project/liked-recipes" element={<LikedRecipes/>}/>
      </Routes>
     </>
   )

@@ -34,9 +34,7 @@ return (
         <section>
         <h2>Page de recettes de la catégorie : {makeTitle(result.subCategorie)} </h2>
         <ul className="flex flex-wrap">{data && data.map((recipe:IRecipe, key:number)=>{
-           return <li className='shadow-2xl rounded-md my-10 mr-10 p-10 bg-neutral-700' key={key}>
-                    <RecipeItem recipeItem={recipe}/>
-                  </li>  
+           return  <RecipeItem key={key} recipeData={recipe}/>  
         })}</ul>
         </section>
 )
