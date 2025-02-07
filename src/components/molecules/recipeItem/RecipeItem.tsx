@@ -21,19 +21,17 @@ export const RecipeItem = ({recipeItem}:IRecipeItem)=>{
 
     
     const addToShoppingList = () =>{
-        const test:string[] =[];
+        // const allRecIng:string[] =[];
         
         for (let t = 0; t < ingredients.length; t++) {
             for (let i = 0; i < recipeIngredients.length; i++) {
                 if(recipeIngredients[i].toLowerCase().includes(ingredients[t].toLowerCase())){
-                   const isExist = test.indexOf(ingredients[t]) !== -1 
-                    !isExist && test.push(ingredients[t])     
-                    console.log(test);             
+                   const isExist = shoppingList.indexOf(ingredients[t]) !== -1 
+                    !isExist &&   setShoppingList(ingredients[t].toLowerCase())               
                 }
             } 
         }
-        
-        setShoppingList(ingredients)
+        console.log(shoppingList);
         
         
     }

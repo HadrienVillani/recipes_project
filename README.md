@@ -55,6 +55,7 @@
 ✅ **Pouvoir modifier sa liste de courses avec une checklist**  
 💀 **Gérer l'affichage des composants via Skeleton**  
 🗄 **Tout relier à une base de données**  
+✅ **Bouton supprimer ingrédient**  
 
 ## Utilisation
 

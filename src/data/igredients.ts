@@ -370,7 +370,6 @@ export const ingredients = [
   "ponzu vinaigrette",
   "coconut lime sauce",
   "ginger sesame sauce",
-  "water",
   "taco sauce",
   "tortilla chips",
   "beef soup bones water",
