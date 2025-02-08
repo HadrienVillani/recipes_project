@@ -1,23 +1,22 @@
 import { create } from "zustand";
 
-interface IRecipe {
-  ingredients: string;
-  instructions: string;
-  servings: string;
-  title: string;
-}
-
 interface State {
-  shoppingList: IRecipe[];
-  setShoppingList: (recipe: IRecipe) => void;
+  shoppingList: string[];
+  setShoppingList: (recipe: string) => void;
+  deleteIngredient: (ingredient: string) => void;
 }
 
 export const useShoppingList = create<any>((set) => ({
   shoppingList: [],
-  setShoppingList: (recipe: IRecipe) => {
+  setShoppingList: (recipe: string) => {
     set((state: State) => [
       ...state.shoppingList,
       state.shoppingList.push(recipe),
     ]);
+  },
+  deleteIngredient: (ingredient: string) => {
+    set((state: State) =>
+    ({shoppingList : state.shoppingList.filter((element) => element !== ingredient)})
+    );
   },
 }));

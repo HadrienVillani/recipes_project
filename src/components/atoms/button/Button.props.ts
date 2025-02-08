@@ -1,5 +1,5 @@
 export interface IButton {
-    label:string
-    onClick?: ()=>void
-    style? :string
+  label: string;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement> | number) => void;
+  style?: string;
 }
